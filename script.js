@@ -96,7 +96,7 @@ form.addEventListener('click', (e) => {
 
 let searchBtn = document.querySelector('#btn')
 searchBtn.addEventListener('click', () => {
-    let query = textBox.value
+    let query = textBox.value.tolowerCase()
     root.innerHTML=""
     next.style.display = 'none'
     prev.style.display = 'none'
