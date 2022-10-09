@@ -74,6 +74,7 @@ prev.addEventListener('click', () => {
     getData(offset,limit)
     if (offset === 1 ){
     prev.disabled = true;
+    home.disabled = true;
 }
 })
 next.addEventListener('click', () => {
