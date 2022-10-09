@@ -107,6 +107,7 @@ searchBtn.addEventListener('click', () => {
     root.innerHTML=""
     next.style.display = 'none'
     prev.style.display = 'none'
+    home.disabled = false;
     async function searchData(){
         try {
              let data = await axios.get(`https://pokeapi.co/api/v2/pokemon/${query}`)
