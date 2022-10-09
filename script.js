@@ -64,15 +64,17 @@ let next = document.querySelector('#next');
 let home = document.querySelector('#home')
 let textBox = document.querySelector('#textbox')
 
-if (offset === 1 ){
-    prev.disabled = true;
-}
+prev.disabled = true;
+home.disabled = true;
 
 prev.addEventListener('click', () => {
     root.innerHTML=""
     offset -= 20;
     limit -= 20
     getData(offset,limit)
+    if (offset === 1 ){
+    prev.disabled = true;
+}
 })
 next.addEventListener('click', () => {
     root.innerHTML=""
@@ -87,6 +89,9 @@ home.addEventListener('click', () => {
     limit = 20
     getData(offset,limit)
     prev.disabled = true
+    if (offset === 1 ){
+    home.disabled = true;
+}
 })
 
 let form = document.querySelector('#form')
