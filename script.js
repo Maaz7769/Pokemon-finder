@@ -79,9 +79,10 @@ prev.addEventListener('click', () => {
 next.addEventListener('click', () => {
     root.innerHTML=""
     offset += 20;
-    limit += 20
+    limit += 20;
     getData(offset,limit)
-    prev.disabled = false
+    prev.disabled = false;
+    home.disabled = false;
 })
 home.addEventListener('click', () => {
     root.innerHTML=""
