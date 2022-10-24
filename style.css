@@ -4,6 +4,7 @@
     padding: 0;
     letter-spacing: .1094rem;
     font-family: 'Courgette', cursive;
+    Scroll-behaviour: smooth;
 }
 
 body{
