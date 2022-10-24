@@ -75,6 +75,7 @@ prev.addEventListener('click', () => {
     if (offset === 1 ){
     prev.disabled = true;
     home.disabled = true;
+    Window.scroll(0,0);
 }
 })
 next.addEventListener('click', () => {
@@ -84,6 +85,7 @@ next.addEventListener('click', () => {
     getData(offset,limit)
     prev.disabled = false;
     home.disabled = false;
+    Window.scroll(0,0);
 })
 home.addEventListener('click', () => {
     root.innerHTML=""
@@ -93,6 +95,7 @@ home.addEventListener('click', () => {
     prev.disabled = true
     if (offset === 1 ){
     home.disabled = true;
+    Window.scroll(0,0);
 }
 })
 
@@ -133,5 +136,6 @@ searchBtn.addEventListener('click', () => {
 home.addEventListener('click', () =>{
     next.style.display = 'block'
     prev.style.display = 'block'
+    Window.scroll(0,0);
 })
 
